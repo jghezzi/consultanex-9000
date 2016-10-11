@@ -1,0 +1,44 @@
+.row
+  .container
+    .large-4.columns
+      %img{:src=> "http://placehold.it/500x500"}
+      %br
+      Lorem ipsum
+    .large-8.columns
+      - @consultants.each do |consultant|
+        .large-3.columns.end
+          .image-wrapper.overlay-fade-in
+            %img{:src=> "http://placehold.it/200x200"}
+            .image-overlay-content
+              %a.button{:href => '#'} farts
+          .consultant-name
+            = consultant.first_name + ' ' + consultant.last_name
+            %br
+            %br
+
+
+/ .row
+/   .small-4.columns
+/     .image-wrapper.overlay-fade-in
+/       %img{:src => "https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"}/
+/       .image-overlay-content
+/         %h2 .overlay-fade-in
+/         %p.price $99.99
+/         %a.button{:href => "#"} Get it
+/   .small-4.columns
+/     .image-wrapper.overlay-slide-in-left
+/       %img{:src => "https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"}/
+/       .image-overlay-content
+/         %h2 .overlay-slide-in-left
+/         %p.price $2319.99
+/         %a.button{:href => "#"} Buy Me
+/   .small-4.columns
+/     .image-wrapper.overlay-fade-in-new-background
+/       %img{:src => "https://tourneau.scene7.com/is/image/tourneau/FRK0100001?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1"}/
+/       .image-overlay-content
+/         %h2 .overlay-fade-in-new-background
+/         %p.price $189,000
+/         %a.button{:href => "#"} Want!
+
+
+          
